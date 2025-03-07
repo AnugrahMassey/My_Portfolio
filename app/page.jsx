@@ -11,10 +11,11 @@ const Home = () => {
     <div className="container mx-auto h-full">
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
         {/* Text */}
-        <div className="text-center xl:text-left">
+        <div className="text-center xl:text-left order-2 xl:order-none">
           <span className="text-xl">DevOps Engineer</span>
           <h1 className="h1 mb-6">
             Hello I'm <br /> <span className="text-accent">Anugrah Massey</span></h1>
+            {/* ABOUT SECTION */}
             <p className="max-w-[500px] mb-9 text-white/80">Bridging the gap between development & operations with automation, CI/CD, and cloud computing. Let’s make DevOps magic happen!
             </p>
             {/* btns and socials        */}
@@ -33,7 +34,7 @@ const Home = () => {
             </div>
         </div>
         {/* Photo */}
-          <div>
+          <div className="order-1 xl:order-none mb-8 xl:mb-0">
           <Photo />
           </div>
       </div>
