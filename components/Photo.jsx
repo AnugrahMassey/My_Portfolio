@@ -20,18 +20,18 @@ const Photo = () => {
                     opacity: 1,
                     transition: {delay: 2.4, duration: 0.4, ease:"easeInOut"},
                 }}
-            className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
+            className="w-[298px] h-[298px] xl:w-[505px] xl:h-[495px] mix-blend-lighten absolute">
                 {/* Image path */}
                 <Image
-                    src="/assets/Final.png" 
-                    priority quality={100} 
+                    src="/assets/F1.png"
+                    priority quality={100}
                     fill alt=" " className="object-contain" />
             </motion.div>
 
             {/*CIRCLE */}
             <motion.svg className="w-[300px] xl:w-[500px] h-[300px] xl:h-[500px]"
             fill="transparent"
-            viewBox="0 0 506 506"
+            viewBox="1 2 506 506" /* 0 0 506 506 */
             xmlns="http://www.w3.org/2000/svg"
             >
                 <motion.circle
@@ -55,8 +55,6 @@ const Photo = () => {
                 />
             </motion.svg>
         </motion.div>
-
-        {/* 1.12.32 */}
     </div>
     );
 };
